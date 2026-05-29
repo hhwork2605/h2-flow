@@ -1,0 +1,135 @@
+{
+  "common": {
+    "cancel": "Hủy",
+    "confirm": "Xác nhận",
+    "close": "Đóng",
+    "retry": "Thử lại",
+    "loading": "Đang tải…",
+    "or": "hoặc",
+    "save": "Lưu",
+    "delete": "Xóa"
+  },
+  "header": {
+    "signIn": "Đăng nhập",
+    "signOut": "Đăng xuất",
+    "upgrade": "Nâng cấp",
+    "settings": "Cài đặt",
+    "account": "Tài khoản",
+    "openPrompts": "Thư viện prompt"
+  },
+  "notifications": {
+    "label": "Thông báo",
+    "empty": "Chưa có thông báo nào",
+    "phaseHint": "Thông báo realtime sẽ kích hoạt ở Phase 4."
+  },
+  "projects": {
+    "switchHeader": "Chuyển project",
+    "namePlaceholder": "Tên project…",
+    "empty": "Chưa có project",
+    "create": "Tạo project mới"
+  },
+  "footer": {
+    "download": "Download",
+    "retry": "Retry"
+  },
+  "tabs": {
+    "generate": "Gen",
+    "workflow": "Workflow",
+    "prompts": "Prompts",
+    "multiTask": "Tasks",
+    "photos": "Photos",
+    "snippets": "Snippets",
+    "history": "Lịch sử",
+    "logs": "Logs"
+  },
+  "auth": {
+    "loginTitle": "Đăng nhập",
+    "loginDesc": "Vào tài khoản h2-flow để dùng đầy đủ tính năng.",
+    "registerTitle": "Đăng ký",
+    "registerDesc": "Tạo tài khoản h2-flow mới.",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "name": "Tên hiển thị",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "loginButton": "Đăng nhập",
+    "loginButtonLoading": "Đang đăng nhập…",
+    "registerButton": "Đăng ký",
+    "registerButtonLoading": "Đang đăng ký…",
+    "googleLogin": "Đăng nhập với Google",
+    "noAccount": "Chưa có tài khoản? Đăng ký",
+    "haveAccount": "Đã có tài khoản? Đăng nhập",
+    "passwordMismatch": "Mật khẩu xác nhận không khớp.",
+    "emailVerifyHint": "Đã gửi email xác minh tới {{email}}. Mở email và xác minh trước khi đăng nhập.",
+    "toLoginPage": "Tới trang đăng nhập",
+    "loginFailed": "Đăng nhập thất bại",
+    "registerFailed": "Đăng ký thất bại"
+  },
+  "generate": {
+    "promptSection": "Prompt",
+    "promptShort": "prompt",
+    "outputShort": "output(s)",
+    "promptCount": "{{count}} prompt",
+    "promptHelpOnePerLine": "Mỗi prompt 1 dòng",
+    "promptPlaceholder": "Nhập prompt…",
+    "promptPlaceholderMulti": "Nhập 1 prompt mỗi dòng…",
+    "multiPromptToggle": "Multi-Prompt",
+    "settingsSection": "Cài đặt",
+    "modelLabel": "Model",
+    "modelPlaceholder": "Chọn model…",
+    "ratioLabel": "Tỉ lệ",
+    "quantityLabel": "Số lượng",
+    "styleLabel": "Phong cách",
+    "mediaImage": "Ảnh",
+    "mediaVideo": "Video",
+    "autoDownload": "Tự động tải",
+    "folderPlaceholder": "Thư mục lưu…",
+    "resolutionLabel": "Độ phân giải",
+    "runMode": "Chế độ",
+    "mode": {
+      "sequential": "Tuần tự",
+      "parallel": "Song song"
+    },
+    "quotaRemaining": "Còn lại {{remaining}} lượt {{action}}",
+    "start": "Tạo",
+    "stop": "Dừng",
+    "resultsSection": "Kết quả",
+    "running": "Đang chạy {{done}}/{{total}}…",
+    "allDone": "Hoàn tất",
+    "toolbar": {
+      "templates": "Thư viện",
+      "chatAI": "Chat AI",
+      "importTxt": "Import .txt",
+      "save": "Lưu prompt",
+      "chatAIComingSoon": "Chat AI enhance sẽ kích hoạt ở Phase 4.",
+      "saveComingSoon": "Tính năng lưu prompt vào thư viện sẽ kích hoạt ở Phase 6."
+    }
+  },
+  "refImages": {
+    "section": "Ảnh tham chiếu",
+    "add": "Thêm",
+    "capture": "Chụp màn hình",
+    "captureComingSoon": "Tính năng chụp màn hình sẽ kích hoạt ở Phase 6.",
+    "emptyHint": "Chọn ảnh / Kéo thả vào đây",
+    "searchPlaceholder": "Tìm…",
+    "filterLabel": "Lọc",
+    "filterAll": "Tất cả",
+    "filterRecent": "Mới nhất",
+    "filterLarge": "Ảnh lớn",
+    "hint": "Kéo thả, dán (Ctrl+V) hoặc click \"Thêm\" để chọn từ máy."
+  },
+  "offline": {
+    "title": "Mất kết nối Internet",
+    "description": "Vui lòng kiểm tra kết nối mạng và thử lại.",
+    "retry": "Thử lại"
+  },
+  "cloneDetected": {
+    "title": "Extension không hợp lệ",
+    "description": "Bản cài đặt này chưa được cấp phép sử dụng dịch vụ. Vui lòng tải bản chính thức từ Chrome Web Store.",
+    "openStore": "Mở Chrome Web Store"
+  },
+  "language": {
+    "label": "Ngôn ngữ",
+    "vi": "Tiếng Việt",
+    "en": "English"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "common": {
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "retry": "Retry",
+    "loading": "Loading…",
+    "or": "or",
+    "save": "Save",
+    "delete": "Delete"
+  },
+  "header": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "upgrade": "Upgrade",
+    "settings": "Settings",
+    "account": "Account",
+    "openPrompts": "Prompt library"
+  },
+  "notifications": {
+    "label": "Notifications",
+    "empty": "No notifications yet",
+    "phaseHint": "Realtime delivery lands in Phase 4."
+  },
+  "projects": {
+    "switchHeader": "Switch project",
+    "namePlaceholder": "Project name…",
+    "empty": "No projects",
+    "create": "Create new project"
+  },
+  "footer": {
+    "download": "Download",
+    "retry": "Retry"
+  },
+  "tabs": {
+    "generate": "Gen",
+    "workflow": "Workflow",
+    "prompts": "Prompts",
+    "multiTask": "Tasks",
+    "photos": "Photos",
+    "snippets": "Snippets",
+    "history": "History",
+    "logs": "Logs"
+  },
+  "auth": {
+    "loginTitle": "Sign in",
+    "loginDesc": "Sign in to your h2-flow account to unlock all features.",
+    "registerTitle": "Create an account",
+    "registerDesc": "Set up a new h2-flow account.",
+    "email": "Email",
+    "password": "Password",
+    "name": "Display name",
+    "confirmPassword": "Confirm password",
+    "loginButton": "Sign in",
+    "loginButtonLoading": "Signing in…",
+    "registerButton": "Create account",
+    "registerButtonLoading": "Creating account…",
+    "googleLogin": "Sign in with Google",
+    "noAccount": "Don't have an account? Sign up",
+    "haveAccount": "Already have an account? Sign in",
+    "passwordMismatch": "Password confirmation does not match.",
+    "emailVerifyHint": "We sent a verification email to {{email}}. Verify before signing in.",
+    "toLoginPage": "Go to sign in",
+    "loginFailed": "Sign in failed",
+    "registerFailed": "Sign up failed"
+  },
+  "generate": {
+    "promptSection": "Prompt",
+    "promptShort": "prompt",
+    "outputShort": "output(s)",
+    "promptCount": "{{count}} prompt",
+    "promptCount_other": "{{count}} prompts",
+    "promptHelpOnePerLine": "One prompt per line",
+    "promptPlaceholder": "Enter prompt…",
+    "promptPlaceholderMulti": "Enter one prompt per line…",
+    "multiPromptToggle": "Multi-Prompt",
+    "settingsSection": "Settings",
+    "modelLabel": "Model",
+    "modelPlaceholder": "Pick a model…",
+    "ratioLabel": "Aspect",
+    "quantityLabel": "Quantity",
+    "styleLabel": "Style",
+    "mediaImage": "Image",
+    "mediaVideo": "Video",
+    "autoDownload": "Auto-download",
+    "folderPlaceholder": "Folder name…",
+    "resolutionLabel": "Resolution",
+    "runMode": "Run mode",
+    "mode": {
+      "sequential": "Sequential",
+      "parallel": "Parallel"
+    },
+    "quotaRemaining": "{{remaining}} {{action}} runs left",
+    "start": "Generate",
+    "stop": "Stop",
+    "resultsSection": "Results",
+    "running": "Running {{done}}/{{total}}…",
+    "allDone": "All done",
+    "toolbar": {
+      "templates": "Library",
+      "chatAI": "Chat AI",
+      "importTxt": "Import .txt",
+      "save": "Save prompt",
+      "chatAIComingSoon": "Chat AI enhance lands in Phase 4.",
+      "saveComingSoon": "Save-to-library lands in Phase 6."
+    }
+  },
+  "refImages": {
+    "section": "Reference images",
+    "add": "Add",
+    "capture": "Screen capture",
+    "captureComingSoon": "Screen capture lands in Phase 6.",
+    "emptyHint": "Pick a file / Drop here",
+    "searchPlaceholder": "Search…",
+    "filterLabel": "Filter",
+    "filterAll": "All",
+    "filterRecent": "Recent",
+    "filterLarge": "Large",
+    "hint": "Drop a file, paste (Ctrl+V) or click \"Add\" to pick from disk."
+  },
+  "offline": {
+    "title": "You're offline",
+    "description": "Check your network connection and try again.",
+    "retry": "Retry"
+  },
+  "cloneDetected": {
+    "title": "Extension not authorized",
+    "description": "This install is not authorized to use the service. Please install the official version from the Chrome Web Store.",
+    "openStore": "Open Chrome Web Store"
+  },
+  "language": {
+    "label": "Language",
+    "vi": "Tiếng Việt",
+    "en": "English"
+  }
+}

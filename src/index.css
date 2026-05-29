@@ -1,0 +1,160 @@
+/* =============================================================================
+   h2-flow — Design System tokens (shadcn/ui contract)
+   Light = Warm / Coral   Dark = Violet (`.dark` class, darkMode: 'class')
+
+   Theo `docs/design-handoff/globals.css`. Legacy vars (`--bg-base`, `--text-1`,
+   `--brand-500` …) là alias trỏ về cùng giá trị để 71 file hiện có không break.
+   ========================================================================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ────────── LIGHT (Warm / Coral) ────────── */
+  :root {
+    /* shadcn canonical (HSL channels) */
+    --background:            42 33% 92%;   /* #f1ede4 cream  */
+    --foreground:            42 21% 9%;    /* #1d1a13 ink    */
+
+    --card:                  42 48% 96%;   /* #fbf8f1        */
+    --card-foreground:       42 21% 9%;
+
+    --popover:               42 48% 96%;
+    --popover-foreground:    42 21% 9%;
+
+    --primary:               14 72% 58%;   /* coral ~#de6b4a */
+    --primary-foreground:    0 0% 100%;
+
+    --secondary:             42 38% 93%;   /* #f5f1e7        */
+    --secondary-foreground:  42 21% 9%;
+
+    --muted:                 42 38% 93%;
+    --muted-foreground:      39 13% 49%;   /* #8a8170        */
+
+    --accent:                42 30% 89%;   /* #ede8db        */
+    --accent-foreground:     42 21% 9%;
+
+    --destructive:           0 84% 60%;
+    --destructive-foreground:0 0% 100%;
+
+    --success:               152 55% 42%;
+    --success-foreground:    0 0% 100%;
+    --warning:               36 92% 55%;
+
+    --border:                42 22% 84%;
+    --input:                 42 22% 84%;
+    --ring:                  14 72% 58%;
+
+    --radius: 0.625rem;
+
+    /* ─── Legacy aliases (rgb triplets) ─── */
+    --bg-base: 241 237 228;       /* #f1ede4 cream         */
+    --bg-elevate: 251 248 241;    /* #fbf8f1 card surface  */
+    --bg-overlay: 245 241 231;    /* #f5f1e7 secondary     */
+    --text-1: 29 26 19;           /* #1d1a13 ink           */
+    --text-2: 138 129 112;        /* #8a8170 muted         */
+    --text-3: 184 175 156;        /* lighter muted         */
+    --brand-50: 253 243 239;
+    --brand-100: 251 229 220;
+    --brand-500: 222 107 74;      /* #de6b4a coral         */
+    --brand-700: 168 67 38;       /* #a84326               */
+    --brand-900: 111 49 34;
+  }
+
+  /* ────────── DARK (Violet) ────────── */
+  .dark {
+    --background:            240 14% 5%;   /* #0c0c10 */
+    --foreground:            240 19% 94%;  /* #ececf1 */
+
+    --card:                  240 14% 10%;  /* #15151c */
+    --card-foreground:       240 19% 94%;
+
+    --popover:               240 13% 13%;  /* #1c1c25 */
+    --popover-foreground:    240 19% 94%;
+
+    --primary:               255 63% 67%;  /* violet #9177e1 */
+    --primary-foreground:    0 0% 100%;
+
+    --secondary:             240 13% 13%;
+    --secondary-foreground:  240 19% 94%;
+
+    --muted:                 240 13% 13%;
+    --muted-foreground:      240 7% 61%;   /* #9595a3 */
+
+    --accent:                240 13% 16%;  /* #23232e */
+    --accent-foreground:     240 19% 94%;
+
+    --destructive:           0 72% 51%;
+    --destructive-foreground:0 0% 100%;
+
+    --success:               152 45% 55%;
+    --success-foreground:    150 60% 8%;
+    --warning:               42 90% 62%;
+
+    --border:                240 13% 16%;
+    --input:                 240 13% 16%;
+    --ring:                  255 63% 67%;
+
+    /* Legacy aliases */
+    --bg-base: 12 12 16;
+    --bg-elevate: 21 21 28;
+    --bg-overlay: 28 28 37;
+    --text-1: 236 236 241;
+    --text-2: 149 149 163;
+    --text-3: 112 112 120;
+    --brand-50: 243 240 253;
+    --brand-100: 231 224 251;
+    --brand-500: 145 119 225;     /* #9177e1 violet */
+    --brand-700: 104 67 184;
+    --brand-900: 70 48 120;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+
+  html, body, #root { height: 100%; }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: 13px;
+    line-height: 1.5;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Accessible focus ring (docs/05 §14) */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+/* ─── Scrollbar hidden global ───
+   Extension UI (sidebar + popup) không cần scrollbar visible — nó vướng layout
+   theo Claude Design. Vẫn scroll được bằng wheel / touch / keyboard.
+   Class `.scrollbar-none` để dùng explicit khi cần.                            */
+@layer base {
+  html,
+  body,
+  *,
+  *::before,
+  *::after {
+    scrollbar-width: none;             /* Firefox */
+    -ms-overflow-style: none;          /* IE / old Edge */
+  }
+  *::-webkit-scrollbar,
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;                     /* Chromium / Safari */
+    width: 0;
+    height: 0;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+}

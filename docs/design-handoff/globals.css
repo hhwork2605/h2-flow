@@ -1,0 +1,105 @@
+/* =============================================================================
+   h2-flow — Design System tokens (shadcn/ui contract)
+   Light mode  = Warm / Coral
+   Dark mode   = Violet  (toggled via `.dark` class, per tailwind darkMode:'class')
+
+   Drop this in src/styles/globals.css and import once at app entry.
+   Values are HSL channels so shadcn components consume them as hsl(var(--x)).
+   ========================================================================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ---------- LIGHT (Warm / Coral) ---------- */
+  :root {
+    --background:            42 33% 92%;   /* #f1ede4 cream */
+    --foreground:            42 21% 9%;    /* #1d1a13 ink   */
+
+    --card:                  42 48% 96%;   /* #fbf8f1 */
+    --card-foreground:       42 21% 9%;
+
+    --popover:               42 48% 96%;
+    --popover-foreground:    42 21% 9%;
+
+    --primary:               14 72% 58%;   /* coral  ~#de6b4a */
+    --primary-foreground:    0 0% 100%;
+
+    --secondary:             42 38% 93%;   /* #f5f1e7 */
+    --secondary-foreground:  42 21% 9%;
+
+    --muted:                 42 38% 93%;
+    --muted-foreground:      39 13% 49%;   /* #8a8170 */
+
+    --accent:                42 30% 89%;   /* #ede8db */
+    --accent-foreground:     42 21% 9%;
+
+    --destructive:           0 84% 60%;    /* #ef4444 */
+    --destructive-foreground:0 0% 100%;
+
+    --success:               152 55% 42%;  /* #2f9e6f-ish */
+    --success-foreground:    0 0% 100%;
+    --warning:               36 92% 55%;
+
+    --border:                42 22% 84%;
+    --input:                 42 22% 84%;
+    --ring:                  14 72% 58%;   /* coral */
+
+    --radius: 0.625rem;                    /* 10px base control radius */
+  }
+
+  /* ---------- DARK (Violet) ---------- */
+  .dark {
+    --background:            240 14% 5%;   /* #0c0c10 */
+    --foreground:            240 19% 94%;  /* #ececf1 */
+
+    --card:                  240 14% 10%;  /* #15151c */
+    --card-foreground:       240 19% 94%;
+
+    --popover:               240 13% 13%;  /* #1c1c25 */
+    --popover-foreground:    240 19% 94%;
+
+    --primary:               255 63% 67%;  /* violet #9177e1 (matches node.generate) */
+    --primary-foreground:    0 0% 100%;
+
+    --secondary:             240 13% 13%;  /* #1c1c25 */
+    --secondary-foreground:  240 19% 94%;
+
+    --muted:                 240 13% 13%;
+    --muted-foreground:      240 7% 61%;   /* #9595a3 */
+
+    --accent:                240 13% 16%;  /* #23232e */
+    --accent-foreground:     240 19% 94%;
+
+    --destructive:           0 72% 51%;
+    --destructive-foreground:0 0% 100%;
+
+    --success:               152 45% 55%;
+    --success-foreground:    150 60% 8%;
+    --warning:               42 90% 62%;
+
+    --border:                240 13% 16%;
+    --input:                 240 13% 16%;
+    --ring:                  255 63% 67%;  /* violet */
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+   Notes
+   - Light = warm/coral, Dark = violet. This is intentional: the brand carries a
+     different accent per mode. If you ever want a single brand hue, set --primary
+     to the same value in both blocks.
+   - Existing TobyFlow tokens (node.*, port.*, status.*) stay in tailwind.config.ts
+     as FIXED hues — they are diagram/semantic colors, not mode-dependent.
+   - Hero display type uses "Playfair Display" (italic, has Vietnamese); UI uses "Inter";
+     numbers/code use "JetBrains Mono". Load via @fontsource or <link>.
+--------------------------------------------------------------------------------*/
